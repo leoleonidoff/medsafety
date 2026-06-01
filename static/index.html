@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MedSafety</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    window.tailwind = window.tailwind || {};
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: '#ffffff',
+            surface: '#f8fafc',
+            border: '#e2e8f0',
+            text: '#0f172a',
+            'text-muted': '#64748b',
+            primary: '#0369a1',
+            'primary-hover': '#075985',
+            'sev-contra-fg': '#7f1d1d',
+            'sev-contra-bg': '#fee2e2',
+            'sev-major-fg': '#dc2626',
+            'sev-major-bg': '#fef2f2',
+            'sev-moderate-fg': '#d97706',
+            'sev-moderate-bg': '#fef3c7',
+            'sev-minor-fg': '#0369a1',
+            'sev-minor-bg': '#dbeafe',
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            mono: ['"Space Mono"', 'ui-monospace', 'monospace'],
+          },
+          boxShadow: {
+            card: '0 1px 3px rgba(0,0,0,0.06)',
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="bg-bg text-text font-sans">
+  <div id="app"></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

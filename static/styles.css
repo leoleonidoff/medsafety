@@ -1,0 +1,38 @@
+/* MedSafety overrides. Tailwind handles the rest. */
+
+:root {
+  color-scheme: light;
+}
+
+html, body { height: 100%; }
+body { -webkit-font-smoothing: antialiased; }
+
+.tabular { font-variant-numeric: tabular-nums; }
+.mono { font-family: "Space Mono", ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+
+input:focus, textarea:focus, select:focus, button:focus {
+  outline: 2px solid #0369a1;
+  outline-offset: 2px;
+}
+
+.chip-contra { background: #fee2e2; color: #7f1d1d; }
+.chip-major { background: #fef2f2; color: #dc2626; }
+.chip-moderate { background: #fef3c7; color: #d97706; }
+.chip-minor { background: #dbeafe; color: #0369a1; }
+
+.card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+
+.shimmer {
+  background: linear-gradient(90deg, #e2e8f0 0%, #f8fafc 50%, #e2e8f0 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.2s infinite linear;
+}
+@keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+
+.drawer { transition: transform 220ms ease-out; }
+
+.disclaimer-band {
+  background: #dbeafe;
+  color: #0f172a;
+  border-radius: 8px;
+}
